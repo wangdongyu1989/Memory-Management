@@ -24,5 +24,4 @@ linux内核采用页式存储管理。虚拟地址空间划分成固定大小的
 段选择符和段寄存器
 ---------------
 一个逻辑地址由两部分组成：一个段标识符和一个指定段内相对地址的偏移量。段标识符是一个16位长的字段，成为段选择符(Segment Selector),而偏移量是一个32位长的字段。
-![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%8420170323a.jpg)
-                                                                                                                                                                                      段选择符 
+![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%8420170323a.jpg)段选择符 
