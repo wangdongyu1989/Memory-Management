@@ -13,4 +13,6 @@
 物理地址
 -------
 用于内存芯片级内存单元寻址。他们与从微处理器的地址引脚出发到内存总线上的电信号相对应。物理地址由32位或36位无符号整数表示。
+
+内存控制单元(MMU)通过一种称为分段单元(segmentation unit)的硬件单路把一个逻辑地址转换成线性地址;接着，第二个称为分页单元（paging unit）的硬件电路把线性地址转换成一个物理地址。
 ![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%8420170322a.jpg)
