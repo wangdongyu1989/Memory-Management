@@ -46,4 +46,5 @@ cs寄存器还有一个很重要的功能：它含有一个两位的字段，用
  ![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%8420170324b.jpg "USER_CS和DS")
 
 也就是说，Linux内核中只使用四种不同的段寄存器值，两种用于内核本身，两种用于所有的进程。现在，我们将这四种数值用二进制展开并与段寄存器的格式相对照：
- 
+首先，TI都是0，也就是说全都使用了GDT。这就与Intel的设计意图不一致了。实际上，在Linux内核中基本上不实用局部段描述表LDT。LDT只是在VM86模式中运行wine以及其他在Linux上模拟运行Windows软件或Dos软件的程序中才使用。
+再看
