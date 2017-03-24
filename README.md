@@ -44,5 +44,6 @@ cs寄存器还有一个很重要的功能：它含有一个两位的字段，用
 
 再看看USER_CS和USER_DS到底是什么。那是在include/asm-i386/segment.h中定义的：   
  ![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%8420170324b.jpg "USER_CS和DS")
+
 也就是说，Linux内核中只使用四种不同的段寄存器值，两种用于内核本身，两种用于所有的进程。现在，我们将这四种数值用二进制展开并与段寄存器的格式相对照：
  
