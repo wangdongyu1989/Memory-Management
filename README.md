@@ -41,6 +41,6 @@ cs寄存器还有一个很重要的功能：它含有一个两位的字段，用
 ![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%8420170324a.jpg "进程设置段寄存器")
 
 这里regs->xdss是段寄存器DS的映像，余类推。这里已经可以看到一个有趣的事，就是除CS被设置成USE_CS外，其他所有的段寄存器都设置成USER_DS。这里特别值得注意的是堆栈寄存器SS，它也被设置成USER_DS。就是说，虽然Intel的意图是将一个进程的映像分成代码段，数据段和堆栈段，Linux内核却并不买这个账。在Linux内核中堆栈段和数据段是不分的。
-    再看看USER_CS和USER_DS到底是什么。那是在include/asm-i386/segment.h中定义的：
-    
+
+再看看USER_CS和USER_DS到底是什么。那是在include/asm-i386/segment.h中定义的：   
  ![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%8420170324b.jpg "USER_CS和DS")   
