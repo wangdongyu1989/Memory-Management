@@ -54,4 +54,4 @@ cs寄存器还有一个很重要的功能：它含有一个两位的字段，用
 段描述符
 -------
 每个段由一个8字节的段描述符(Segment Descriptor)表示，它描述了段的特征。段描述符放在全局描述符表(Global Descriptor Table,GDT)或布局描述符表(Local Descriptor Table, LDT)中。GDT在主存中的地址和大小放在gdtr控制寄存器中，当前正被使用的LDT的地址和大小放在ldtr控制寄存器中。
-![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%8420170329a.jpg “段描述符定义”)
+![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%8420170329a.jpg "段描述符定义")
