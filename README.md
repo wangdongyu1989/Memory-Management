@@ -67,3 +67,5 @@ cs寄存器还有一个很重要的功能：它含有一个两位的字段，用
 ---------
 
 ![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%8420170330b.jpg "段映射过程")
+
+上图显示逻辑地址是怎么转换成相应线性地址的。
