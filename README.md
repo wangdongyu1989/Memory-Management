@@ -85,3 +85,5 @@ Linux中的分段
 运行在用户态的所有Linux进程都使用一对相同的段来对指令和数据寻址。这两个段就是所谓的用户代码段和用户数据段。类似地，运行在内核态的所有Linux进程都使用一对相同的段对指令和数据寻址：它们分别叫做内核代码段和内核数据段。下图显示了这四个重要段的段描述符字段的值。
 
 ![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%8420170331a.jpg)
+
+相应的段选择符由宏__USER_CS,__USER_DS,__KERNEL_CS,和__KERNEL_DS分别定义。例如，为了对内核代码寻址，内核只需要把__KERNEL_CS宏产的值装进cs段寄存器即可。
