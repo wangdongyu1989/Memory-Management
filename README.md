@@ -98,3 +98,5 @@ Linux 中的分段
 Linux GDT
 -----------
 在单处理器系统中只有一个GDT，而在多处理器系统中每个CPU对应一个GDT。所有的GDT都存放在cpu_gdt_table数组中，而所有GDT的地址和他们的大小(当初始化gdtr寄存器时使用)被存放在cpu_gdt_descr数组中。
+
+![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E5%86%85%E5%AD%98%E6%98%A0%E5%B0%8420170401a.jpg "GDT")
