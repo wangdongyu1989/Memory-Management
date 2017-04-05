@@ -7,4 +7,4 @@
 
 * [访问越界](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E8%AE%BF%E9%97%AE%E8%B6%8A%E7%95%8C.md)
 
-* [用户堆栈的扩展](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E7%94%A8%E6%88%B7%E5%A0%86%E6%A0%88%E7%9A%84%E6%89%A9%E5%B1%95.md)
+* [进程地址空间分布](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E7%94%A8%E6%88%B7%E5%A0%86%E6%A0%88%E7%9A%84%E6%89%A9%E5%B1%95.md)
