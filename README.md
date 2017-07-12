@@ -17,4 +17,5 @@
 
 * [页面的定期换出](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%AE%9A%E6%9C%9F%E6%8D%A2%E5%87%BA.md)
 
-* [页面的换入]（https://github.com/wangdongyu1989/Memory-Management/blob/master/%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%8D%A2%E5%85%A5.md）
+* [页面的换入](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%8D%A2%E5%85%A5.md)
+
