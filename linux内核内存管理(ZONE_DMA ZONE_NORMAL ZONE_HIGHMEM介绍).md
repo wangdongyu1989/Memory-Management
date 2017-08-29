@@ -22,3 +22,8 @@ linux系统在初始化时，会根据实际的物理内存的大小，为每个
 linux虚拟地址内核空间分布：
 
 ![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/images/linux%E8%99%9A%E6%8B%9F%E5%9C%B0%E5%9D%80%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4%E5%88%86%E5%B8%83.jpg)
+
+在kernel image下面的16M的内核空间用于DMA操作。位于内核空间高端的128M地址主要由3部分组成，分别为vmalloc area,持久化内核映射区，临时内核映射区。
+
+由于ZONE_NORMAL和内核线性存在直接映射关系，所以内核会将频繁使用的数据如kernel代码，GDT，IDT，PGD，mem_map数组等放在ZONE_NORMAL里。而将用户数据，页表(PT)等不常用数据放在ZONE_HIGHMEM里，只在要访问这些数据时才建立映射关系（kmap()）。比如，当内核要访问I/O设备存储空间时，就使用ioremap()将位于物理地址高端的mmio区映射到内核空间的vmalloc area中，在使用完之后便断开映射关系。
+
