@@ -18,3 +18,7 @@ linux系统在初始化时，会根据实际的物理内存的大小，为每个
 * ZONE_NORMAL的范围是16M~896M，该区域的物理页面是内核能直接使用的。
 
 * ZONE_HIGHMEM的范围是896M~结束，该区域即为高端内存，内核不能直接使用。
+
+linux虚拟地址内核空间分布：
+
+![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/images/linux%E8%99%9A%E6%8B%9F%E5%9C%B0%E5%9D%80%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4%E5%88%86%E5%B8%83.jpg)
