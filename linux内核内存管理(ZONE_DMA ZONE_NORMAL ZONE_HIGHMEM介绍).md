@@ -2,6 +2,8 @@ CPU被划分为多个节点(node)，内存则被分簇，每个CPU对应一个�
 *  首先，内存被划分为节点，每个节点关联到系统中的一个处理器，内核中表示为pg_data_t的实例。系统中每个节点被链接到一个以NULL结尾的pgdat_list链表中<而其中的每个节点利用pg_data_tnode_next字段链接到下一节点>。而对PC这种UMA结构的机器来说，只使用了一个称为contig_page_data的静态pg_data_t结构。
 *  在具有大容量RAM的现在32位计算机中，CPU不能直接访问所有物理地址，因为线性地址空间太小，内核不可能直接映射所有物理内存到线性地址空间。
 
+![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/images/pg_data_t.jpg)
+
 ## x86的物理地址空间布局：
 
 通常32位linux内核地址空间划分0~3G为用户空间，3-4G为内核空间。注意这里是32位内核地址空间划分，64位内核地址空间划分是不同的。
