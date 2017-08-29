@@ -3,4 +3,5 @@ CPU被划分为多个节点(node)，内存则被分簇，每个CPU对应一个�
 *  在具有大容量RAM的现在32位计算机中，CPU不能直接访问所有物理地址，因为线性地址空间太小，内核不可能直接映射所有物理内存到线性地址空间。
 
 x86的物理地址空间布局：
+
 ![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/images/x86%E7%89%A9%E7%90%86%E5%9C%B0%E5%9D%80%E7%A9%BA%E9%97%B4%E5%88%86%E5%B8%83.jpg)
