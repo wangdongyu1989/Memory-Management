@@ -5,3 +5,7 @@ CPU被划分为多个节点(node)，内存则被分簇，每个CPU对应一个�
 x86的物理地址空间布局：通常32位linux内核地址空间划分0~3G为用户空间，3-4G为内核空间。注意这里是32位内核地址空间划分，64位内核地址空间划分是不同的。
 
 ![image](https://github.com/wangdongyu1989/Memory-Management/blob/master/images/x86%E7%89%A9%E7%90%86%E5%9C%B0%E5%9D%80%E7%A9%BA%E9%97%B4%E5%88%86%E5%B8%83.jpg)
+
+
+物理地址空间的顶部以下一段空间，被PCI设备的I/O内存映射占据，它们的大小和布局由PCI规范所决定。640k-1M这段地址空间被BIOS和VGA适配器所占据。
+linux系统在初始化时，会根据实际的物理内存的大小，为每个物理页面创建一个page对象，所有的page对象构成一个mem_map数组。
