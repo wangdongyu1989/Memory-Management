@@ -21,6 +21,5 @@
 
 * [页面的换入](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%8D%A2%E5%85%A5.md)
 
-* [zone_dma,zone_normal,zone_high](https://github.com/wangdongyu1989/Memory-Management/blob/master/linux%E5%86%85%E6%A0%B8%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86(ZONE_DMA%20ZONE_NORMAL%20ZONE_HIGHMEM%E4%BB%8B%E7%BB%8D).md)
 
 * [重要数据结构解释](https://github.com/wangdongyu1989/Memory-Management/blob/master/%E9%87%8D%E8%A6%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%A7%A3%E9%87%8A.md)
